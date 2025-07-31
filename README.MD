@@ -1,4 +1,4 @@
-# gROC Log Consumer 
+# gRPC Log Consumer 
 
 A minimal gRPC-based logging server written in C#. It receives log entries from clients, stores them in a local SQLite database, and supports querying and deletion by date.
 
