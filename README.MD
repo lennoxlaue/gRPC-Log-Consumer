@@ -25,10 +25,12 @@ Make sure .NET 8 SDK is installed. Then:
 dotnet restore
 dotnet run
 Server will run at: http://localhost:2910
+```
 
-gRPC Endpoints
+## gRPC Endpoints
 Defined in proto/log.proto:
 
+```proto
 sendLog(sendLogRequest) returns (sendLogResponse)
 
 getLog(getLogRequest) returns (getLogResponse)
