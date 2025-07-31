@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+service LogConsumer {
+    rpc sendLog (sendLogRequest) returns (sendLogResponse) {}
+    rpc getLog (getLogRequest) returns (getLogResponse) {}
+    rpc clearLog (clearLogRequest) returns (clearLogResponse) {}
+}
+
+enum Stage {
+    TRACE = 0;
+    DEBUG = 1;
+    INFO = 2; 
+    WARN = 3;
+    ERROR = 4; 
+    FATAL = 5;
+}
+
+message sendLogRequest {
+    string log = 1;
+    Stage stage = 2;
+}
+
+message sendLogResponse {
+    bool success = 1;
+}
+
+message getLogRequest {
+    string date = 1;
+}
+
+message getLogResponse {
+    repeated LogEntry log = 1;
+}
+
+message clearLogRequest {
+    string date = 1;
+}
+
+message clearLogResponse {
+    bool success = 1;
+    int32 deletedCount = 2;
+}
+
+message LogEntry {
+    string log = 1;
+    Stage stage = 2; 
+    string timestamps = 3; 
+}

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log-consumer", "log-consumer.csproj", "{BA7871A1-C50D-A137-EA27-6CB326BC2634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA7871A1-C50D-A137-EA27-6CB326BC2634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7871A1-C50D-A137-EA27-6CB326BC2634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7871A1-C50D-A137-EA27-6CB326BC2634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7871A1-C50D-A137-EA27-6CB326BC2634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C936BA4-6C39-4603-A5C8-69A3777F79F0}
+	EndGlobalSection
+EndGlobal
