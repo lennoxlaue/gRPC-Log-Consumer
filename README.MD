@@ -35,7 +35,7 @@ getLog(getLogRequest) returns (getLogResponse)
 
 clearLog(clearLogRequest) returns (clearLogResponse)
 
-Python Test Client Example
+## Python Test Client Example
 
 send_response = stub.sendLog(log_pb2.sendLogRequest(
     log="Log entry from Python client",
